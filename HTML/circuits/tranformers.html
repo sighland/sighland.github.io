@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <title>Transformers</title>
+</head>
+<body>
+    <main>
+        <h1>Transformers</h1> <br>
+        <div class="content">
+            <p>
+                Transformers are used to transfer energy between two or more circuits. <br>
+                They typically step voltage either up or down, and maintain a steady current flow within an electrical system. <br>
+                Basically: The primary function of transformers is to convert AC signals to different voltage levels while maintaining a constant frequency. <br>
+            </p>
+            <br>
+        </div>
+        <button type="button" class="collapsible">Transformer Anatomy</button>
+        <div class="comp">
+            <object type="image" data="../../images/transformerbuild.png">
+                <img src="../../images/transformerbuild.png" />
+            </object>
+        </div>
+        <div class="bottom_panel">
+            <a href="../circuits.html">Circuit Entryway</a>
+        </div>
+    </main>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var comp = this.nextElementSibling;
+            if (comp.style.display === "block") {
+              comp.style.display = "none";
+            } else {
+              comp.style.display = "block";
+            }
+          });
+        }
+    </script>
+</body>
