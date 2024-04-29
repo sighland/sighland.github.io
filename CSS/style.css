@@ -27,11 +27,11 @@ body {
     display: none;
     overflow: hidden;
     width: 75%;
-    background-color: #f1f1f1;
+    background-color: rgb(60, 167, 62);
   }
 
 .bottom_panel {
-    background-color: rgb(68, 68, 68);
+    background-color: rgb(60, 167, 62);
     overflow: hidden;
     position: fixed;
     bottom: 0;
