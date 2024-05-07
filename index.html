@@ -14,7 +14,7 @@
             <a href="memo.html">Memo</a> <br>
             <a href="sources.html">Sources</a> <br>
             <button type="button" class="collapsible">Rituals</button>
-            <div class="comp">
+            <div class="content">
                 <a href="/HTML/circuits.html">Electronic Circuitry</a> <br>
                 <a href="/HTML/em.html">Electromagnetism</a> <br>
                 <a href="/HTML/classicalmech.html">Classical Mechanics</a> <br>
@@ -63,11 +63,11 @@
             for (i = 0; i < coll.length; i++) {
               coll[i].addEventListener("click", function() {
                 this.classList.toggle("active");
-                var comp = this.nextElementSibling;
-                if (comp.style.display === "block") {
-                  comp.style.display = "none";
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                  content.style.display = "none";
                 } else {
-                  comp.style.display = "block";
+                  content.style.display = "block";
                 }
               });
             }

@@ -4,6 +4,7 @@ body {
     padding: 0;
     background-color: rgb(70, 70, 70);
     color:rgb(218, 205, 163);
+    position: absolute;
 }
 
 h1 {
@@ -26,6 +27,14 @@ p {
     font-size: 15px;
 }
 
-.collapsible:hover {
+.active, .collapsible:hover {
     background-color: rgb(202, 202, 202);
 }
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    width: 75%;
+    background-color: #f1f1f1;
+  }
