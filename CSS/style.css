@@ -6,26 +6,22 @@
 
 body {
   font-family: 'Courier New', Courier, monospace;
-  background-color: #30292F;
+  background-color: rgb(70, 70, 70);
+  color:rgb(218, 205, 163); 
 }
 
 h1 {
-  text-align:center;
-  color: #E8FFB7;
-  margin-top: 1em;
+  color:rgb(163, 196, 218); 
 }
 
+p {
+  color:rgb(218, 205, 163);
+}
 
 .content {
-  width: 60%;
-  padding: 1em;
-  margin: auto;
-  margin-top:1em;
+  width: 80%;
+  padding: 5em;
   border: black solid 2px;
-  background-color:white;
-  opacity: 30%;
-  color: #314D5E;
-  align-content: center;
 }
 
 .collapsible {
@@ -41,10 +37,6 @@ h1 {
   outline: none;
   font-size: 15px; */
   display:none;
-}
-
-.collapse-trigger {
-font-size:1.5em;
 }
 
 .collapse-trigger.active + .collapsible {
@@ -66,32 +58,17 @@ font-size:1.5em;
 } */
 
 
-#topics a:link, #topics a:visited {
-  color:#C15933;
+.topics:link, .topics:visited {
+  color:rgb(211, 191, 125);
   text-decoration: none;
 }
 
-#topics a:hover {
-  color:#426A5A;
+.topics:hover {
+  color:rgb(176, 129, 62);
   text-decoration: none;
 }
 
-#topics a:active {
-  color: #C15933;
-  text-decoration: none;
-}
-
-#extras a:link, #extras a:visited {
-  color:#C15933;
-  text-decoration: none;
-}
-
-#extras a:hover {
-  color:#426A5A;
-  text-decoration: none;
-}
-
-#extras a:active {
-  color: #C15933;
+.topics:active {
+  color: rgb(176, 98, 62);
   text-decoration: none;
 }
