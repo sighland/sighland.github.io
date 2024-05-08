@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: rgb(70, 70, 70);
-    color:rgb(218, 205, 163);
+    color:rgb(218, 205, 163); 
     position: absolute;
 }
 
@@ -37,4 +37,4 @@ p {
     overflow: hidden;
     width: 75%;
     background-color: #f1f1f1;
-  }
+}
