@@ -103,6 +103,10 @@ footer {
   background-color:black;
 }
 
+.footer-nav ol {
+  list-style-type:none;
+}
+
 .footer-nav {
   position:fixed;
   bottom:0;
