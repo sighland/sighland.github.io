@@ -136,11 +136,3 @@ footer {
     color: #C15933;
     text-decoration: none;
 }
-
-.separator {
-    color: silver;
-    font-weight: bold;
-    padding: 0 0.5em;
-    pointer-events: none;
-    text-decoration:none;
-} 
