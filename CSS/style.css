@@ -35,6 +35,7 @@ h1 {
 }
 
 .content ol {
+  margin-left:2em;
   list-style-type:lower-roman;
 }
 
