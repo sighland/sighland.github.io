@@ -101,3 +101,27 @@ h1 {
   margin: auto;
   margin-top:1em;
 }
+
+footer {
+    position:fixed;
+    bottom:0;
+    width: 100%;
+    background-color:black;
+}
+
+.footer-nav {
+    display:inline-block;
+}
+
+.footer-link { 
+    color:#C15933;
+    position: left;
+}
+
+.footer-link a::after {
+    display: inline-block;
+    color: silver;
+    content: '|';
+    font-weight: bold;
+    padding: 0 3em;
+}
