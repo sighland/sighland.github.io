@@ -41,6 +41,7 @@ h1 {
 
 .content ul {
   list-style-type:square;
+  font-size:small;
 }
 
 .collapsible {
