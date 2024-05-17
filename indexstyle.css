@@ -28,6 +28,18 @@ h1 {
     align-content: center;
 }
 
+.progress-bar {
+    width: 60%;
+    padding: 1em;
+    margin: auto;
+    margin-top:1em;
+    border: black solid 2px;
+    background-color:white;
+    opacity: 30%;
+    color: #314D5E;
+    align-content: center;
+  }
+
 .collapsible {
     /* background-color: rgb(129, 123, 123);
     justify-content: center;
