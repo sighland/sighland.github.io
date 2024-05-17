@@ -14,7 +14,7 @@
             </p>
             <br>
         </div>
-        <button type="button" class="collapsible">Transformer Anatomy</button>
+       <!-- <button type="button" class="collapsible">Transformer Anatomy</button> -->
 
         <div class="content">
             <div class="collapse-trigger"><b>Transformer Diagram</b></div>
@@ -23,30 +23,14 @@
             </object>            
         </div>
 
-        <div class="comp">
+        <!-- <div class="comp">
             <object type="image" data="../../images/transformerbuild.png">
                 <img src="../../images/transformerbuild.png" />
             </object>
-        </div>
+        </div> -->
         <div class="bottom_panel">
             <a href="../circuits.html">Circuit Entryway</a>
         </div>
     </main>
-
-    <script>
-        var coll = document.getElementsByClassName("collapsible");
-        var i;
-        
-        for (i = 0; i < coll.length; i++) {
-          coll[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var comp = this.nextElementSibling;
-            if (comp.style.display === "block") {
-              comp.style.display = "none";
-            } else {
-              comp.style.display = "block";
-            }
-          });
-        }
-    </script>
+    <script src="../../myscript.js" type="text/javascript" defer></script>
 </body>
