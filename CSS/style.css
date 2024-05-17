@@ -21,6 +21,20 @@ h1 {
   padding: 1em;
   margin: auto;
   margin-top:1em;
+  align-content: center;
+}
+
+.content h1 {
+  text-align:center;
+  color: #893C47;
+  margin-top: 1em;
+}
+
+.content p {
+  width: 60%;
+  padding: 1em;
+  margin: auto;
+  margin-top:1em;
   border: black solid 2px;
   background-color:white;
   opacity: 30%;
