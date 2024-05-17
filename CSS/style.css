@@ -131,10 +131,19 @@ footer {
   text-decoration: none;
 }
 
-.separator {
+.footer-link a::after {
+  display: inline-block;
+  color: silver;
+  content: '>';
+  font-size: 80%;
+  font-weight: bold;
+  padding: 0 0.5em;
+}
+
+/* .separator {
   color: silver;
   font-weight: bold;
   padding: 0 0.5em;
   pointer-events: none;
   text-decoration:none;
-} 
+}  */
