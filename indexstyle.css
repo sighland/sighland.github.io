@@ -114,18 +114,33 @@ footer {
     bottom:0;
     width: 100%;
     background-color:black;
-    display:inline-block;
 }
 
-.footer-link { 
+.footer-link {
+    display:inline;
     color:#C15933;
     position: left;
 }
 
-.footer-link a::after {
-    display: inline-block;
-    color: silver;
-    content: '|';
-    font-weight: bold;
-    padding: 0 3em;
+.footer-link a:link, .footer-link a:visited {
+    color:#C15933;
+    text-decoration: none;
 }
+
+.footer-link a:hover {
+    color:#426A5A;
+    text-decoration: none;
+}
+
+.footer-link a:active {
+    color: #C15933;
+    text-decoration: none;
+}
+
+.separator {
+    color: silver;
+    font-weight: bold;
+    padding: 0 0.5em;
+    pointer-events: none;
+    text-decoration:none;
+} 
