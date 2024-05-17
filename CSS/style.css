@@ -44,6 +44,29 @@ h1 {
   font-size:small;
 }
 
+.content dt {
+  font-weight:bold;
+}
+
+.content dt > a:link, .content a:visited {
+  color:#C15933;
+  text-decoration: none;
+}
+
+.content dt > a:hover {
+  color:#426A5A;
+  text-decoration: none;
+}
+
+.content dt > a:active {
+  color: #C15933;
+  text-decoration: none;
+}
+
+.content dd {
+  margin-left:2em;
+}
+
 .collapsible {
   /* background-color: rgb(129, 123, 123);
   justify-content: center;
