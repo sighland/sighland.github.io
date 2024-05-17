@@ -39,7 +39,7 @@ h1 {
   list-style-type:lower-roman;
 }
 
-.content ul {
+.content li > ul {
   list-style-type:square;
   font-size:small;
 }
