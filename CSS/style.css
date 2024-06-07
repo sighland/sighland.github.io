@@ -16,10 +16,8 @@ h1 {
 }
 
 #imgwrapper {
-  height: 400px;
-  width: 400px;
-  display: block;
-  align-content:center;
+  height: 50px;
+  width: 50px;
 }
 
 #headimage {
