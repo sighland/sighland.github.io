@@ -202,7 +202,7 @@ footer {
 }
 
 #maxvid {
-  opacity:100%;
+  opacity:100% !important;
   display:block;
   margin-right:auto;
   margin-left:auto;
