@@ -201,6 +201,13 @@ footer {
   padding: 0 0.5em;
 }
 
+#maxvid {
+  opacity:100%;
+  display:block;
+  margin-right:auto;
+  margin-left:auto;
+}
+
 /* .separator {
   color: silver;
   font-weight: bold;
