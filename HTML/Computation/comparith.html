@@ -22,8 +22,15 @@
                 A floating-point system is <b>normalized</b> if the leading digit <i>d<sub>0</sub></i> is always nonzero (unless to num represented is 0). 
                 Ergo, the mantissa <i>m</i> is always 1 &#8804; <i>m</i> &lt; &Beta;.
                 <ul>
-                    <li>Underflow Level (UFL) - smallest positive normalized floating-point number</li>
-                    <li>Overflow Level (OFL) - largest positive normalized floating-point number</li>
+                    <li>Underflow Level (UFL) - smallest positive normalized floating-point number. The first digit is 1 followed by 0s.</li>
+                    <li>Overflow Level (OFL) - largest positive normalized floating-point number. Each digit of the mantissa is &Beta;-1</li>
+                    <li>Rounding - Process of choosing a nearby floating-point number fl(x) to approximate a real number x. This leads to <i>rounding errors</i>.
+                        <ul>
+                            <li>Chop (round-toward-0) - truncated to the t-1 digit</li>
+                            <li>Round-to-nearest (round to even) - fl(x) is nearest floating-point to x; if tie, take even</li>
+                        </ul>
+                    </li>
+                    <li>Machine Precision (unit roundoff) - determines the accuracy of a floating-point system, as well as the max possible <b>relative error</b></li>
                 </ul>
             </p>
         </section>
