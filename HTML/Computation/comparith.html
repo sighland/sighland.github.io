@@ -24,7 +24,7 @@
                 <ul>
                     <li>Underflow Level (UFL) - smallest positive normalized floating-point number. The first digit is 1 followed by 0s.</li>
                     <li>Overflow Level (OFL) - largest positive normalized floating-point number. Each digit of the mantissa is &Beta;-1</li>
-                    <li>Rounding - Process of choosing a nearby floating-point number fl(x) to approximate a real number x. This leads to <i>rounding errors</i>.
+                    <li>Rounding - Process of choosing a nearby floating-point number fl(x) to approximate a real number x. This leads to <i>rounding rules</i>.
                         <ul>
                             <li>Chop (round-toward-0) - truncated to the t-1 digit</li>
                             <li>Round-to-nearest (round to even) - fl(x) is nearest floating-point to x; if tie, take even</li>
@@ -32,6 +32,20 @@
                     </li>
                     <li>Machine Precision (unit roundoff) - determines the accuracy of a floating-point system, as well as the max possible <b>relative error</b></li>
                 </ul>
+                <br>
+                In a floating point system, there are no floating-point numbers between 0 and &Beta;<sup>L</sup>. If we allow leading digits to be zero (only when at UFL), then there can be floating-point numbers here.
+                 These extra added numbers are called <b>subnormal</b> or <b>denormalized</b>. These have a lower precision <i>t</i> than normalized numbers. A system like this is said to have 
+                 <b>gradual underflow</b>.
+            </p>
+        </section>
+        <section class="content">
+            <h1>Floating-Point Arithmetic</h1>
+            <p>
+                In addition, the exponents of a FPN must be shifted. If the sum contains more than <i>t</i> digits, a shift occurs and we lose digits. <br>
+                Conversely, the product of two FPN need not be shifted, but may have up to 2<i>t</i> digits; hence, we can also lose a lot, since we can have <i>t</i> digits max. 
+                It should also be noted that addition/multiplication of FPNs are commutative but not associative. Because floating-point arithmetic need not obey the laws of real arithmetic, 
+                forward error analysis can be difficult -- hence, backwards error analysis works better, as it can use real arithmetic. <br> <br> 
+                In subtraction, the result will have fewer than <i>t</i> digits, so it is always fully representational.
             </p>
         </section>
         <!-- <div class="content">
