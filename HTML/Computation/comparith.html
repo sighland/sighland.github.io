@@ -48,7 +48,7 @@
                 Conversely, the product of two FPN need not be shifted, but may have up to 2<i>t</i> digits; hence, we can also lose a lot, since we can have <i>t</i> digits max. 
                 It should also be noted that addition/multiplication of FPNs are commutative but not associative. Because floating-point arithmetic need not obey the laws of real arithmetic, 
                 forward error analysis can be difficult -- hence, backwards error analysis works better, as it can use real arithmetic. <br> <br> 
-                In subtraction, the result will have fewer than <i>t</i> digits, so it is always fully representational.
+                In subtraction, the result will have fewer than <i>t</i> digits, so it is always fully representational. However, this also leads to <b>cancellation</b> if the operands are too close.
             </p>
         </section>
         <!-- <div class="content">
