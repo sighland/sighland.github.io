@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
-    <link rel="stylesheet" href="/CSS/style.css" type="text/css">
-    <title>Linear Algebra</title>
+    <link rel="stylesheet" href="/CSS/notebookstyle.css" type="text/css">
+    <title>Linear Systems</title>
 </head>
 <body>
     <main>
@@ -9,43 +9,35 @@
             <img id="headimage" src="../images/circuits.jpg" />
         </object>    -->
         <section class="content">
-            <h1>Overview</h1>
+            <h1>Linear Systems</h1>
             <p>
-                Linear Algebra is an essential tool for solving systems of equations. Specifically, linear systems.
+               Nonlinear systems can oftentimes be approximated <i>locally</i> by linear systems. That is, within a certain range of a value, a linear system gives us a pretty good estimate as to the solution of
+                a nonlinear system. For instance, a derivative is just a linear approximation of a nonlinear curve at a particular point. Given the equation Ax = b, if 
+                there exists a vector b that can be expressed as a linear combo of the columns of matrix A, then the system is <b>consistent</b>, and these coefficients of the lin combo are given by vector x. <br>
+                The simplest of linear systems to solve are <i>square systems</i>, where # columns = # rows in the A matrix. 
             </p>
         </section>
-        <div class="content">
+        <!-- <div class="content">
             <div class="collapse-trigger"><b>Topics</b></div>
             <ul id="topics" class="collapsible">
                 <li><a href="eigen.html">The Eigenvalue Problem</a></li>
             </ul>                
-        </div>
-        <section class="content">
-            <h1>Existence and Uniqueness</h1>
-            <p>
-                A square matrix, <b><i>A</i></b> is said to be <b>nonsingular</b> if it satisfies any of the following criteria: <br>
-                <ol>
-                    <li><b><i>A</i></b> has an inverse</li>
-                    <li>det(<b><i>A</i></b>) does <ul>not</ul> equal 0</li>
-                    <li>rank(<b><i>A</i></b>) = <i>n</i></li>
-                    <li>For any nonzero vector <i>x</i>, <b><i>A</i></b><i>x</i> does <ul>not</ul> equal 0</li>
-                </ol>
-            </p>
-        </section>
+        </div> -->
         
-        <div class="content">
+        <!-- <div class="content">
             <div class="collapse-trigger"><b>Relevant Portals</b></div>
             <ul id="extras" class="collapsible">
                 <li><a href="../classicalmech.html">Classical Mechanics</a></li>
                 <li><a href ="../toolkit.html">Math Toolkit</a> <br></li>
             </ul>                
-        </div>
+        </div> -->
+
         <footer>
             <nav class="footer-nav">
                 <ol>
                     <li class="footer-link"><a href="../../index.html">Index</a> </li> <!-- <span class="separator">|</span> -->
-                    <li class="footer-link"><a href="../toolkit.html">Toolkit</a></li>
-                    <li class="footer-link">Linear Algebra</li>
+                    <li class="footer-link"><a href="../sc.html">Computation</a></li>
+                    <li class="footer-link">Linear Systems</li>
                 </ol>
             </nav>
         </footer>
