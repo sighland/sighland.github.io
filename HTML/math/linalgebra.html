@@ -29,7 +29,18 @@
                     <li>det(<b><i>A</i></b>) does <ul>not</ul> equal 0</li>
                     <li>rank(<b><i>A</i></b>) = <i>n</i></li>
                     <li>For any nonzero vector <i>x</i>, <b><i>A</i></b><i>x</i> does <ul>not</ul> equal 0</li>
-                </ol>
+                </ol> <br>
+                otherwise, the matrix is singular. <br> <br>
+                The singularity of a matrix is important in determining whether or not it is unique; if <b><i>A</i></b> if nonsingular, then it must have an inverse, 
+                 and the system Ax = b always has a unique solution. <br> <br>
+                Similarly, if A is <i>singular</i>, then the number of solutions is determined by the RHS of vector <i>b</i>. That is, for a given val of b, there may 
+                 be no solution, but if there is a solution, then any additive scalar multiplied by a nonzero vector to the solution vector <i>x</i> is also a solution; moreover, this vector multiplying the scalar, <i>z</i>, 
+                 must have the condition Az = 0, by condition 4 listed above. <br> Thus: <br>
+                <ul>
+                    <li>Unique solution: <b><i>A</i></b> singular, <i>b</i> arbitrary</li>
+                    <li>Infinitely many solutions: <b><i>A</i></b> singular, <i>b</i> within span(<b><i>A</i></b>) (<b>consistent</b>)</li>
+                    <li>No solution: <b><i>A</i></b> singular, <i>b</i> <ul>not</ul> within span(<b><i>A</i></b>) (<b>inconsistent</b>)</li>
+                </ul>
             </p>
         </section>
         
