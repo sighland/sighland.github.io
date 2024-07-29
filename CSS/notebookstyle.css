@@ -51,14 +51,20 @@
   }
   
   .content ol {
-    margin-left:2em;
+    margin-left:3em;
     list-style-type:lower-roman;
+    font-weight:bold;
   }
   
   .content li > ul {
     list-style-type:square;
     font-size:small;
     color:#893C47;
+    margin-left:2em;
+  }
+  
+  .content ul {
+    font-weight:bold;
   }
   
   .content dt {
