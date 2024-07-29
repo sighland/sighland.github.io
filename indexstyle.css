@@ -18,15 +18,16 @@ body {
 }
 
 #menu {
-    position: sticky;
+    position: absolute;
     top:0em;
     left:0em;
 }
 
 #menubars {
-  width:2em;
-  height:2em;
-  object-fit:fill;
+    position:sticky;
+    width:2em;
+    height:2em;
+    object-fit:fill;
 }
 
 h1 {
