@@ -26,7 +26,21 @@
                 On the other hand, the other two p-norms are used mostly for determining sensitivity of sols to lin systems. The norm of a vector can also be 
                 thought of as the factor by which the unit sphere must be scaled to encompass the vector.
                 <br> <hr> <br>
-                Likewise, we need to measure the size of a matrix using <b>matrix norms</b>.
+                Likewise, we need to measure the size of a matrix using <b>matrix norms</b>. <br>
+                The matrix norm corresponding to the vector 1-norm is just the max absolute column sum of the matrix. <br>
+                The matrix norm corresponding to the vector &infin;-norm is just the max absolute row sum. <br>
+                <object id="imgwrapper" type="image" data="../../images/vmnorms.jpg">
+                    <img id="headimage" src="../../images/vmnorms.jpg" />
+                </object> <br>
+                Matrices also have a <b>condition number</b> consistent with the general notion of a condition number. That is, the cond number bounds the ratio of 
+                relative change in the sol of a lin sys to a certain relative change in the input data. The condition number is the ratio of maximum relative stretching to the max relative shrinking. A large number indicates 
+                a transformation that is longer and thinner. There are 4 important properties of the matrix condition number: <br>
+                <ul>
+                    <li>For any matrix <b><i>A</i></b>, cond(<b><i>A</i></b>)&#8805;1</li> <!--html for greater than or equal to --->
+                    <li>For the identity matrix, cond(<b><i>I</i></b>)=1</li>
+                    <li>For any matrix <b><i>A</i></b> and nonzero scalar &#611; &#947;, cond(&#947;<b><i>A</i></b>)=cond(<b><i>A</i></b>) </li>
+                    <li>For any diagonal matrix <b><i>D</i></b> = diag(<i>d<sub>i</sub></i>), cond(<b><i>D</i></b>) = (max|<i>d<sub>i</sub></i>|) / (min|<i>d<sub>i</sub></i>|)</li>
+                </ul> <br>
             </p>
         </section>
         <div class="content">
