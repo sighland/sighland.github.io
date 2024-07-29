@@ -5,6 +5,17 @@ function attachCollapseTriggers() {
             this.classList.toggle("active");
         });
     }
+    
+    /* var menuTrigs = document.getElementByClassname("menubars");
+    for (var menuTrig of menuTrigs) {
+        menuTrig.addEventListener("click", function() {
+            this.classList.toggle("active");
+        });
+    }
+    
+    document.getElementById("menubars").onclick = function() {
+      document.getElementById("menubars").classList.toggle("active");
+    }; */
 }
 
 attachCollapseTriggers();

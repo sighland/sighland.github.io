@@ -25,9 +25,38 @@ body {
 
 #menubars {
     position:sticky;
+    display:block;
     width:2em;
     height:2em;
     object-fit:fill;
+}
+
+#menubars.active + .collapsible {
+    display:grid;
+    background-color: rgba(0,0,0,0.75);
+    position:absolute;
+    width: 10%;
+    height:50%;
+    margin-top:1em;
+    margin-bottom:0em;
+    padding-bottom:0em;
+}
+
+#menubars.active + .collapsible a {
+  text-decoration:none;
+  font-size:1em;
+  margin-top:0em;
+  margin-bottom:0em;
+  padding-top:1em;
+  padding-bottom:1em;
+  padding-left:0em;
+  text-align:center;
+  text-justify:center;
+  color: #893C47;
+}
+
+#menubars.active + .collapsible a.grey {
+  background-color:rgba(128,128,128,0.5);
 }
 
 h1 {
@@ -92,6 +121,7 @@ h1 {
     content: "▲";
     float: right;
 }
+
 
 /* .active, .collapsible:hover {
     background-color: rgb(202, 202, 202);
