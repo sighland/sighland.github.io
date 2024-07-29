@@ -23,6 +23,12 @@ body {
     left:0em;
 }
 
+#menubars {
+  width:2em;
+  height:2em;
+  object-fit:fill;
+}
+
 h1 {
     text-align:center;
     color: #893C47;
