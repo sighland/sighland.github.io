@@ -12,26 +12,26 @@
             <h1>Computer Arithmetic and Floating-Point Numbers</h1>
             <p>
                 <ul>
-                    <li><i>&Beta;</i> - base/radix </li>
-                    <li><i>t</i> - precision</li>
-                    <li><i>e</i> - exponent</li>
-                    <li><i>[L,U]</i> - exponent range</li>
+                    <li><i><span class="term">&Beta;</span></i> - base/radix </li>
+                    <li><i><span class="term">t</span></i> - precision</li>
+                    <li><i><span class="term">e</span></i> - exponent</li>
+                    <li><i><span class="term">[L,U]</span></i> - exponent range</li>
                 </ul>
                 <br>
 
                 A floating-point system is <b>normalized</b> if the leading digit <i>d<sub>0</sub></i> is always nonzero (unless to num represented is 0). 
                 Ergo, the mantissa <i>m</i> is always 1 &#8804; <i>m</i> &lt; &Beta;.
                 <ul>
-                    <li>Normalization - a floating-point system (FPS) is normalized if the leading digit d<sub>0</sub> is always nonzero</li>
-                    <li>Underflow Level (UFL) - smallest positive normalized floating-point number. The first digit is 1 followed by 0s.</li>
-                    <li>Overflow Level (OFL) - largest positive normalized floating-point number. Each digit of the mantissa is &Beta;-1</li>
-                    <li>Rounding - Process of choosing a nearby floating-point number fl(x) to approximate a real number x. This leads to <i>rounding rules</i>.
+                    <li><span class="term">Normalization</span> - a floating-point system (FPS) is normalized if the leading digit d<sub>0</sub> is always nonzero</li>
+                    <li><span class="term">Underflow Level (UFL)</span> - smallest positive normalized floating-point number. The first digit is 1 followed by 0s.</li>
+                    <li><span class="term">Overflow Level (OFL)</span> - largest positive normalized floating-point number. Each digit of the mantissa is &Beta;-1</li>
+                    <li><span class="term">Rounding</span> - Process of choosing a nearby floating-point number fl(x) to approximate a real number x. This leads to <i>rounding rules</i>.
                         <ul>
-                            <li>Chop (round-toward-0) - truncated to the t-1 digit</li>
-                            <li>Round-to-nearest (round to even) - fl(x) is nearest floating-point to x; if tie, take even</li>
+                            <li><span class="term">Chop (round-toward-0)</span> - truncated to the t-1 digit</li>
+                            <li><span class="term">Round-to-nearest (round to even)</span> - fl(x) is nearest floating-point to x; if tie, take even</li>
                         </ul>
                     </li>
-                    <li>Machine Precision (unit roundoff) - determines the accuracy of a floating-point system, as well as the max possible <b>relative error</b></li>
+                    <li><span class="term">Machine Precision (unit roundoff)</span> - determines the accuracy of a floating-point system, as well as the max possible <b>relative error</b></li>
                 </ul>
                 <br>
                 In a floating point system, there are no floating-point numbers between 0 and &Beta;<sup>L</sup>. If we allow leading digits to be zero (only when at UFL), then there can be floating-point numbers here.

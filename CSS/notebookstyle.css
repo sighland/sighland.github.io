@@ -53,7 +53,6 @@
   .content ol {
     margin-left:3em;
     list-style-type:lower-roman;
-    font-weight:bold;
   }
   
   .content li > ul {
@@ -63,7 +62,7 @@
     margin-left:2em;
   }
   
-  .content ul {
+  .term {
     font-weight:bold;
   }
   
