@@ -21,13 +21,60 @@
             </ul>                
         </div>
         <section class="content">
+            <h1>Terms</h1>
+            <p>
+                <ul>
+                    <li>Row equivalent - one matrix can be transformed into the other matrix by a sequence of elementary row operations (replacement, interchange, or scaling)</li>
+                    <li>Echelon form - a matrix form that satisfies the following criteria: 
+                        <ol>
+                            <li>All nonzero roes are above any rows with all zeroes</li>
+                            <li>The leading entry (first nonzero from left) of a nonzero row is always <i>strictly to the right</i> of the leading entry of the row above it</li>
+                        </ol>
+                    </li>
+                    <li>Row-reduced echelon form (RREF) - a matrix is in echelon form and satisfies: 
+                        <ol>
+                            <li>The leading entry in each nonzero row is 1</li>
+                            <li>Each leading entry is the only nonzero entry in its column</li>
+                        </ol>
+                    </li>
+                    <li>Pivot position - the position of a leading entry in an echelon form of a matrix</li>
+                    <li>Pivot column - the column that contains a pivot position</li>
+                    <li>Basic Variable/ Pivot Variable - a variable that corresponds to a pivot column in the coefficient matrix of a linear system</li>
+                    <li>Free Variable - variable that is not a pivot variable</li>
+                    <li>Consistent system - a system that has a solution</li>
+                    <li>Span - given a set of vectors S, a set of all lin combos of all vectors in S</li>
+                    <li>Rank - number of pivots (non-free vars) a matrix has</li>
+                </ul>
+            </p>
+        </section>
+        <section class="content">
+            <h1>Subspaces</h1>
+            <p>
+                In matrix theory, there are four fundamental subspaces: <br>
+                <ol>
+                    <li>Column Space</li>
+                    <li>Row Space</li>
+                    <li>Null Space</li>
+                    <li>Left Null Space</li>
+                </ol> <br>
+                All vectors that are orthogonal to the row space are in the null space, and vice versa. So, a given vector x can be decomposed into 
+                x<sub>r</sub> + x<sub>n</sub> = x, meaning that it has a component in the null space and a component in the row space. 
+                The x<sub>n</sub> component maps to the 0 vector in the column space. Similarly, if we have Ax = b, then x<sub>r</sub> maps to b in the column space.
+                <br> <br>
+                Much like the row and null spaces are orthogonal to each other, the column and left null spaces are orthogonal to each other.
+                <object id="imgwrapper" type="image" data="../../images/FundamentalSpaces.png">
+                    <img id="headimage" src="../../images/FundamentalSpaces.png" />
+                </object>
+            </p>
+        </section>
+        <section class="content">
             <h1>Existence and Uniqueness</h1>
             <p>
-                A square matrix, <b><i>A</i></b> is said to be <b>nonsingular</b> if it satisfies any of the following criteria: <br>
+                A square n x n matrix, <b><i>A</i></b> is said to be <b>nonsingular</b> if it satisfies any of the following criteria: <br>
                 <ol>
                     <li><b><i>A</i></b> has an inverse</li>
                     <li>det(<b><i>A</i></b>) does <u>not</u> equal 0</li>
-                    <li>rank(<b><i>A</i></b>) = <i>n</i></li>
+                    <li>rank(<b><i>A</i></b>) = <i>n</i> (the rank of the matrix is the maximum number possible)</li>
                     <li>For any nonzero vector <i>x</i>, <b><i>A</i></b><i>x</i> does <u>not</u> equal 0</li>
                 </ol> <br>
                 otherwise, the matrix is singular. <br> <br>
