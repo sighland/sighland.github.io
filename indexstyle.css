@@ -17,12 +17,17 @@ body {
     background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
 }
 
+#menu {
+    position: sticky;
+    top:0em;
+    left:0em;
+}
+
 h1 {
     text-align:center;
     color: #893C47;
     margin-top: 1em;
 }
-
 
 .content {
     width: 60%;
