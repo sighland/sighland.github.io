@@ -11,14 +11,18 @@
         <section class="content">
             <h1>Least Squares</h1>
             <p>
+                When taking measurements, there's almost always error. To smooth out this error, we take multiple measurements.
+                 We then take the average of these measurements: so we are using a single number to represent a whole set of numbers.
+                We seek a lower-dimensional approx to a higher-dimensional object -- this involves projecting a vector onto a lower
+                 dimensional subspace, which is what we do through least squares.
             </p>
         </section>
-        <!-- <section class="content">
-            <h1>Concepts</h1>
+        <section class="content">
+            <h1>Terms</h1>
             <p>
-                
-            </p>
-        </section> -->
+                Overdetermined - a system where there are more equations that unknowns (long and skinny matrix)
+                Residual - for a system Ax=b, the difference between the LHS and RHS (r = b-Ax)
+        </section>
         <div class="content">
             <div class="collapse-trigger"><b>See Also:</b></div>
             <ul id="topics" class="collapsible">
@@ -37,7 +41,8 @@
         <footer>
             <nav class="footer-nav">
                 <ol>
-                    <li class="footer-link"><a href="../index.html">Index</a> </li> <!-- <span class="separator">|</span> -->
+                    <li class="footer-link"><a href="../../index.html">Index</a> </li> <!-- <span class="separator">|</span> -->
+                    <li class="footer-link"><a href="../sc.html">Computation</a></li>
                     <li class="footer-link">LSQ</li>
                 </ol>
             </nav>
